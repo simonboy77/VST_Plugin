@@ -31,12 +31,14 @@ How to get the header files of the soundwaves working:
 #############################################################################################
 
 public:
+
 	void initialiseSineSynth();
 	void initialiseSquareSynth();
 	void initialiseTriangleSynth();
 	void initialiseSawSynth();
 	
 private:
+
 	void ResetSynth();
 	
 	Synthesiser synth;
