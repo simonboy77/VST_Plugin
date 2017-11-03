@@ -106,4 +106,4 @@ voiceAmount is used to change the amount of voices, I have a SetVoiceAmount(int)
 
 -Put one of the above initialise funtions in the constructor if you want a wave to be selected on startup
 
--I change between waves using buttons on the UI
+-I change between waves using buttons on the UI, but you can do it however you like because the initialise functions are public, so they can be called from the PluginEditor in any way
