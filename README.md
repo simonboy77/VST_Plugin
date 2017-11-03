@@ -6,13 +6,17 @@ How to get the header files of the soundwaves working:
 (You can find everything below and more in the src folder, check the PluginProcessor and PluginEditor classes)
 
 -Put all the headers in the same folder as your PluginProcessor.cpp
+
 -Include the headers like so:
 
 #############################################################################################
 
 #include "Sine.h"
+
 #include "Square.h"
+
 #include "Triangle.h"
+
 #include "Saw.h"
 
 #############################################################################################
@@ -24,10 +28,15 @@ How to get the header files of the soundwaves working:
 #############################################################################################
 
 void SimonVstpluginAudioProcessor::ResetSynth()
+
 {
+
 	//synth.allNotesOff();
+	
 	synth.clearSounds();
+	
 	synth.clearVoices();
+	
 }
 
 void SimonVstpluginAudioProcessor::initialiseSineSynth()\n
