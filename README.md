@@ -34,8 +34,10 @@ void SimonVstpluginAudioProcessor::ResetSynth()
 	
 }
 
-void SimonVstpluginAudioProcessor::initialiseSineSynth()\n
+void SimonVstpluginAudioProcessor::initialiseSineSynth()
+
 {
+
 	ResetSynth();
 
 	// Add some voices...
@@ -49,7 +51,9 @@ void SimonVstpluginAudioProcessor::initialiseSineSynth()\n
 }
 
 void SimonVstpluginAudioProcessor::initialiseSquareSynth()
+
 {
+
 	ResetSynth();
 
 	// Add some voices...
@@ -63,7 +67,9 @@ void SimonVstpluginAudioProcessor::initialiseSquareSynth()
 }
 
 void SimonVstpluginAudioProcessor::initialiseTriangleSynth()
+
 {
+
 	ResetSynth();
 
 	// Add some voices...
@@ -77,7 +83,9 @@ void SimonVstpluginAudioProcessor::initialiseTriangleSynth()
 }
 
 void SimonVstpluginAudioProcessor::initialiseSawSynth()
+
 {
+
 	ResetSynth();
 
 	// Add some voices...
