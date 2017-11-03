@@ -3,6 +3,7 @@ My very own VST Plugin
 
 
 How to get the header files of the soundwaves working:
+
 (You can find everything below and more in the src folder, check the PluginProcessor and PluginEditor classes)
 
 -Put all the headers in the same folder as your PluginProcessor.cpp
@@ -104,4 +105,5 @@ curWave is used to check which wave is currently selected. This can be used to d
 voiceAmount is used to change the amount of voices, I have a SetVoiceAmount(int) function for that.
 
 -Put one of the above initialise funtions in the constructor if you want a wave to be selected on startup
+
 -I change between waves using buttons on the UI
