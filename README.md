@@ -19,6 +19,7 @@ How to get the header files of the soundwaves working:
 
 
 -Add following functions to PluginProcessor Class:
+(But replace SimonVstpluginAudioProcessor with your own AudioProcessor name)
 
 #############################################################################################
 
@@ -29,7 +30,7 @@ void SimonVstpluginAudioProcessor::ResetSynth()
 	synth.clearVoices();
 }
 
-void SimonVstpluginAudioProcessor::initialiseSineSynth()
+void SimonVstpluginAudioProcessor::initialiseSineSynth()\n
 {
 	ResetSynth();
 
