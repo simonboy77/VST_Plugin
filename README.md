@@ -15,7 +15,9 @@ How to get the header files of the soundwaves working:
 #include "Sine.h"
 
 #include "Square.h"
+
 #include "Triangle.h"
+
 #include "Saw.h"
 
 #############################################################################################
