@@ -12,11 +12,8 @@ How to get the header files of the soundwaves working:
 #############################################################################################
 
 #include "Sine.h"
-
 #include "Square.h"
-
 #include "Triangle.h"
-
 #include "Saw.h"
 
 #############################################################################################
@@ -30,13 +27,9 @@ How to get the header files of the soundwaves working:
 void SimonVstpluginAudioProcessor::ResetSynth()
 
 {
-
 	//synth.allNotesOff();
-	
 	synth.clearSounds();
-	
 	synth.clearVoices();
-	
 }
 
 void SimonVstpluginAudioProcessor::initialiseSineSynth()\n
