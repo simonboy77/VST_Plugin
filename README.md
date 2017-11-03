@@ -24,6 +24,7 @@ How to get the header files of the soundwaves working:
 
 
 -Add following functions to PluginProcessor Class:
+
 (But replace SimonVstpluginAudioProcessor with your own AudioProcessor name)
 
 #############################################################################################
