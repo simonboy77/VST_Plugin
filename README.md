@@ -2,9 +2,12 @@
 My very own VST Plugin
 
 
+
+YOU NEED JUCE EXPERIENCE FOR THIS
+
 How to get the header files of the soundwaves working:
 
-(You can find everything below and more in the src folder, check the PluginProcessor and PluginEditor classes)
+(You can find everything below and more in the src folder, check the PluginProcessor and PluginEditor classes, and I recommend looking at those files and the differences with your code)
 
 -Put all the headers in the same folder as your PluginProcessor.cpp
 
@@ -23,7 +26,26 @@ How to get the header files of the soundwaves working:
 #############################################################################################
 
 
--Add following functions to PluginProcessor Class:
+-Add following function declarations and variables to PluginProcessor.h:
+
+#############################################################################################
+
+public:
+	void initialiseSineSynth();
+	void initialiseSquareSynth();
+	void initialiseTriangleSynth();
+	void initialiseSawSynth();
+	
+private:
+	void ResetSynth();
+	
+	Synthesiser synth;
+
+
+#############################################################################################
+
+
+-Add following functions to PluginProcessor.cpp:
 
 (But replace SimonVstpluginAudioProcessor with your own AudioProcessor name)
 
