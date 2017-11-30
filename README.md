@@ -4,11 +4,10 @@ My very own VST Plugin
 
 
 YOU NEED JUCE EXPERIENCE FOR THIS
-if you don't have juce experience i recommend following the following tutorials:
+if you don't have juce experience I recommend following the following tutorials:
 https://juce.com/doc/tutorial_create_projucer_basic_plugin
 
 https://juce.com/doc/tutorial_code_basic_plugin 
-
 
 
 How to get the header files of the soundwaves working:
