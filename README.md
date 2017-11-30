@@ -9,6 +9,7 @@ https://juce.com/doc/tutorial_create_projucer_basic_plugin
 
 https://juce.com/doc/tutorial_code_basic_plugin 
 
+
 How to get the header files of the soundwaves working:
 
 (You can find everything below and more in the src folder, check the PluginProcessor and PluginEditor classes, and I recommend looking at those files and the differences with your code)
