@@ -1,36 +1,34 @@
-/*
-  ==============================================================================
-
-    This file was auto-generated!
-
-    It contains the basic framework code for a JUCE plugin editor.
-
-  ==============================================================================
-*/
-
-#pragma once
+#ifndef PLUGINEDITOR_H
+#define PLUGINEDITOR_H
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PluginProcessor.h"
 
-
-//==============================================================================
-/**
-*/
-class MegaVstAudioProcessorEditor  : public AudioProcessorEditor
+class MegaVstAudioProcessorEditor  : public AudioProcessorEditor, public Button::Listener
 {
 public:
-    MegaVstAudioProcessorEditor (MegaVstAudioProcessor&);
-    ~MegaVstAudioProcessorEditor();
+  MegaVstAudioProcessorEditor (MegaVstAudioProcessor&);
+  ~MegaVstAudioProcessorEditor();
 
-    //==============================================================================
-    void paint (Graphics&) override;
-    void resized() override;
+  void paint (Graphics&) override;
+  void resized() override;
+
+  void setFittedText(String text);
+  void buttonClicked(Button* button);
 
 private:
-    // This reference is provided as a quick way for your editor to
-    // access the processor object that created it.
-    MegaVstAudioProcessor& processor;
+  MegaVstAudioProcessor& processor;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MegaVstAudioProcessorEditor)
+  MidiKeyboardComponent midiKeyboard;
+
+  TextButton sineButton;
+  TextButton squareButton;
+  TextButton triangleButton;
+  TextButton sawButton;
+
+  String fittedText;
+
+  JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MegaVstAudioProcessorEditor)
 };
+
+#endif

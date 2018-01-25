@@ -7,7 +7,7 @@ SimonVstpluginAudioProcessorEditor::SimonVstpluginAudioProcessorEditor (SimonVst
     : AudioProcessorEditor (&p), processor (p), midiKeyboard(p.keyboardState, MidiKeyboardComponent::horizontalKeyboard)
 {
 	addAndMakeVisible(midiKeyboard);
-	
+
 	sineButton.setButtonText("Sine");
 	sineButton.addListener(this);
 	sineButton.setBounds(5, 5, 150, 60);
@@ -32,7 +32,7 @@ SimonVstpluginAudioProcessorEditor::SimonVstpluginAudioProcessorEditor (SimonVst
 	label.setText("Test", NotificationType::dontSendNotification);
 	label.setBounds(180, 180, 40, 20);
 	addAndMakeVisible(label);
-	
+
 	setSize (400, 300);
 }
 
@@ -80,7 +80,7 @@ void SimonVstpluginAudioProcessorEditor::setFittedText(String text)
 void SimonVstpluginAudioProcessorEditor::buttonClicked(Button* button)
 {
 	int curWave = processor.getCurWave();
-	
+
 	if (button == &sineButton && curWave != 0)
 	{
 		setFittedText("init Sine");
